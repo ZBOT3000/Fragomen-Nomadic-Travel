@@ -10,7 +10,7 @@ function App() {
 
       <div className="flex">
         <SideBar />
-        <div className="bg-green-500 w-full">
+        <div className="bg-main-blue w-full">
           <HomePage />
         </div>
       </div>
