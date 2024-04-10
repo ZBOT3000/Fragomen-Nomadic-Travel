@@ -80,7 +80,7 @@ function SearchFilter({
                 data-tooltip-placement="right-end"
                 class="absolute z-50 whitespace-normal break-words rounded-lg bg-fragomen-blue py-1.5 px-3 font-sans text-sm font-normal text-white focus:outline-none"
               >
-                {selectedValue + " " + "selected"}
+                {selectedValue + " selected"}
               </div>
             )}
           </div>
