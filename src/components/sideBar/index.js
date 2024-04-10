@@ -14,8 +14,10 @@ function SideBar() {
         <nav className="flex flex-1 flex-col  pt-1">
           <NavLink
             to="/home"
-            className={`text-white group relative p-5 ${
-              isActive("/home") ? "bg-white text-black " : "bg-transparent"
+            className={`group relative p-5 ${
+              isActive("/home")
+                ? "bg-white text-black "
+                : "bg-transparent text-white"
             } hover:bg-white`}
           >
             <svg
@@ -37,8 +39,10 @@ function SideBar() {
           </NavLink>
           <NavLink
             to="/new-order"
-            className={`text-white group relative p-5 ${
-              isActive("/new-order") ? "bg-white text-black " : "bg-transparent"
+            className={` group relative p-5 ${
+              isActive("/new-order")
+                ? "bg-white text-black "
+                : "bg-transparent text-white"
             } hover:bg-white`}
           >
             <svg
@@ -58,10 +62,10 @@ function SideBar() {
           </NavLink>
           <NavLink
             to="/quick-check"
-            className={`text-white group relative p-5 ${
+            className={`group relative p-5 ${
               isActive("/quick-check")
                 ? "bg-white text-black "
-                : "bg-transparent"
+                : "bg-transparent text-white"
             } hover:bg-white`}
           >
             <svg
@@ -81,8 +85,10 @@ function SideBar() {
           </NavLink>
           <NavLink
             to="/tracker"
-            className={`text-white group relative p-5 ${
-              isActive("/tracker") ? "bg-white text-black " : "bg-transparent"
+            className={`group relative p-5 ${
+              isActive("/tracker")
+                ? "bg-white text-black "
+                : "bg-transparent text-white"
             } hover:bg-white`}
           >
             <svg
@@ -107,8 +113,10 @@ function SideBar() {
           </NavLink>
           <NavLink
             to="/my-docs"
-            className={`text-white group relative p-5 ${
-              isActive("/my-docs") ? "bg-white text-black " : "bg-transparent"
+            className={`group relative p-5 ${
+              isActive("/my-docs")
+                ? "bg-white text-black "
+                : "bg-transparent text-white"
             } hover:bg-white`}
           >
             <svg
@@ -130,10 +138,10 @@ function SideBar() {
           </NavLink>
           <NavLink
             to="/my-profile"
-            className={`text-white group relative p-5 ${
+            className={` group relative p-5 ${
               isActive("/my-profile")
                 ? "bg-white text-black "
-                : "bg-transparent"
+                : "bg-transparent text-white"
             } hover:bg-white`}
           >
             <svg
@@ -149,8 +157,10 @@ function SideBar() {
           </NavLink>
           <NavLink
             to="/more"
-            className={`text-white group relative p-5 ${
-              isActive("/more") ? "bg-white text-black " : "bg-transparent"
+            className={` group relative p-5 ${
+              isActive("/more")
+                ? "bg-white text-black "
+                : "bg-transparent text-white"
             } hover:bg-white`}
           >
             <svg
