@@ -3,6 +3,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import SearchFilter from "../../components/search";
 import Dropdown from "../../components/dropdown";
 import Calendar from "../../components/calendar";
+import MapComponent from "../../components/map/index";
 
 const countriesTravel = [
   { name: "Germany" },
@@ -72,16 +73,6 @@ function Home() {
     setIsOpenTravel(false);
   };
 
-  const handleArrivialSelect = (date) => {
-    setArrivialDate(date);
-    setIsOpenArrivialDate(false);
-  };
-
-  const handleDepartureSelectDes = (date) => {
-    setDepartureDate(date);
-    setIsOpenDepartureDate(false);
-  };
-
   const toggleDropdownTrav = () => {
     setIsOpen(!isOpen);
   };
@@ -101,7 +92,6 @@ function Home() {
   const toggleDropdownDeparture = () => {
     setIsOpenDepartureDate(!isOpenDepatureDate);
   };
-  // Search filter
 
   const [filteredData, setFilteredData] = useState(data);
 
@@ -134,8 +124,6 @@ function Home() {
     console.log("Selected value updated:", selectedValue);
   }, [selectedValue]);
 
-  // Search Filter
-
   var yearArrivial = arrivialDate.getFullYear();
   var monthArrivial = (arrivialDate.getMonth() + 1).toString().padStart(2, "0");
   var dayArrivial = arrivialDate.getDate().toString().padStart(2, "0");
@@ -153,14 +141,15 @@ function Home() {
     dayDeparture + "/" + monthDeparure + "/" + yearDeparture;
 
   return (
-    <div className="min-h-full bg-green ml-3">
-      <div className="h-[893px] w-[454px] bg-dark-blue">
+    <div className="min-h-full bg-dark-gunmental ml-3 ">
+      <MapComponent className="inset-0 -z-30" />
+      <div className="absolute top-16 h-[893px] w-[454px] bg-dark-blue z-30">
         <div className="flex flex-col pl-5 pt-3 ">
           <h1 className="font-montserrat text-[24px] font-semibold leading-29 text-left text-white">
             Create Itinerary
           </h1>
-          <div className="pt-4 w-[398px] mb-2">
-            <form class="">
+          <div className="pt-4 w-[398px] mb-2 ">
+            <form className="">
               <div className="relative inline-block text-left font-montserrat font-medium pt-1">
                 <Dropdown
                   label={"Travel Origin"}

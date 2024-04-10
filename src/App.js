@@ -1,19 +1,22 @@
-import "./App.css";
 import NavBar from "./components/navBar/index";
 import SideBar from "./components/sideBar/index";
-import HomePage from "./page/home-page/index";
+import HomePage from "./pages/home-page/index";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="bg-white-800">
       <NavBar />
-
-      <div className="flex">
-        <SideBar />
-        <div className="bg-main-blue w-full">
-          <HomePage />
+      <Router>
+        <div className="flex">
+          <SideBar />
+          <div className="bg-main-blue w-full">
+            <Routes>
+              <Route path="/home" element={<HomePage />} />
+            </Routes>
+          </div>
         </div>
-      </div>
+      </Router>
     </div>
   );
 }
