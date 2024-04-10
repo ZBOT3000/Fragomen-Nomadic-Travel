@@ -4,7 +4,7 @@ function Dropdown({ label, toggle, name, isOpen, items, handleSelect }) {
   return (
     <>
       <div className="pb-1">
-        <label class="font-montserrat text-[16px] font-semibold leading-29 text-left text-white">
+        <label className="font-montserrat text-[16px] font-semibold leading-29 text-left text-white">
           {label}
         </label>
       </div>

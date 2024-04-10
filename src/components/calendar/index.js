@@ -17,7 +17,7 @@ function Calendar({
     <div className="flex flex-row space-x-8">
       <div className="pt-4 flex flex-col">
         <div className="pb-2">
-          <label class="font-montserrat text-[16px] font-semibold leading-29 text-left text-white">
+          <label className="font-montserrat text-[16px] font-semibold leading-29 text-left text-white">
             Arrivial
           </label>
         </div>
@@ -42,10 +42,10 @@ function Calendar({
         </button>
 
         {isOpenArrivialDate && (
-          <div class="relative max-w-sm">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+          <div className="relative max-w-sm">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
               <svg
-                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                className="w-4 h-4 text-gray-500 dark:text-gray-400"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -66,7 +66,7 @@ function Calendar({
 
       <div className="pt-4 flex flex-col">
         <div className="pb-2">
-          <label class="font-montserrat text-[16px] font-semibold leading-29 text-left text-white">
+          <label className="font-montserrat text-[16px] font-semibold leading-29 text-left text-white">
             Departure
           </label>
         </div>
@@ -91,10 +91,10 @@ function Calendar({
         </button>
 
         {isOpenDepatureDate && (
-          <div class="relative max-w-sm">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+          <div className="relative max-w-sm">
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
               <svg
-                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                className="w-4 h-4 text-gray-500 dark:text-gray-400"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
