@@ -13,9 +13,9 @@ function SideBar() {
       <aside className="flex w-[59px] h-[893px] flex-col items-center border-r border-primary-blue bg-primary-blue">
         <nav className="flex flex-1 flex-col  pt-1">
           <NavLink
-            to="/home"
+            to="/"
             className={`group relative p-5 ${
-              isActive("/home")
+              isActive("/")
                 ? "bg-white text-black "
                 : "bg-transparent text-white"
             } hover:bg-white`}
